@@ -1,0 +1,641 @@
+<head>
+	<style>
+	.alpha {width:80%}
+	.alpha a{text-decoration:none; color:#045FB4; font-size:18px; font-weight:bold;}
+	.alpha p{padding-left:10px;}
+	
+	.alpha section { width:100%; height:30px; overflow:hidden; margin:20px 0px; padding-bottom:0px; padding-left:10px; background: #d1d1d1; border-radius:2px;}
+	.alpha section h1{color:white; font-size:15pt; text-decoration:none; margin-top:5px;}
+	.alpha section a{color:white; text-decoration:none; font-size:18px;}
+	.alpha section a:hover {text-decoration:none; color:#7C0000; font-size:18px;}
+	
+	
+	.resource {padding-left:10px; margin-bottom:10px;}
+	.info {padding-left:10px;}
+	
+	/*Information lines for resource */
+	.access:before {content:"Access: "; color:black; font-size:9pt; font-weight:bold;}
+	.type:before {content:"Resource Type: "; color:black;font-size:9pt; font-weight:bold;}
+	
+	.subject:before {content:"Subjects: "; color:black; font-size:9pt;font-weight:bold;}
+	.subjectbutton {color:white; background: #d1d1d1; display:inline-block; padding:2px 3px; border-radius: 2px; margin-right:5px; margin-top:2px; margin-bottom:2px;}
+
+	
+	.contents:before {content:"Contents: "; color:black;font-size:9pt; font-weight:bold;}
+	.coverage:before {content:"Coverage: "; color:black;font-size:9pt; font-weight:bold;}
+
+
+	.letternav a {color:white; text-decoration:none;}
+	.letternav section{width:auto; height:30px; margin:15px 1px; border-radius:5px; padding-left: 5px; padding-right:5px; background:#7C0000 ; position:relative; float:left;}
+	.letternav section h1{color:white; font-size: 18px; position:relative; top:-9px; text-decoration:none;}
+	.letternav section:hover {background: #d1d1d1}
+
+	
+	
+	.back-to-top {
+		position: fixed;
+		bottom: 2em;
+		right: 0px;
+		text-decoration: none;
+		color: white;
+		background-color: rgba(135, 135, 135, 0.50);;
+		font-size: 14px;
+		font-weight:bold;
+		padding: 1em;
+		display: none;
+		border-radius:15px;
+	}
+
+	.back-to-top:hover {    
+		background-color: #7C0000
+		}
+
+	</style>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+</head>
+<body>
+<script>
+jQuery(document).ready(function() {
+    var offset = 220;
+    var duration = 500;
+    jQuery(window).scroll(function() {
+        if (jQuery(this).scrollTop() > offset) {
+            jQuery('.back-to-top').fadeIn(duration);
+        } else {
+            jQuery('.back-to-top').fadeOut(duration);
+        }
+    });
+    
+    jQuery('.back-to-top').click(function(event) {
+        event.preventDefault();
+        jQuery('html, body').animate({scrollTop: 0}, duration);
+        return false;
+    })
+});
+</script>
+	<div id="TopNav">
+		<div class="letternav"><br />
+			<section>
+				<h1><a href="#A">A</a></h1>
+			</section>
+			<section>
+				<h1><a href="#B">B</a></h1>
+			</section>
+			<section>
+				<h1><a href="#C">C</a></h1>
+			</section>
+			<section>
+				<h1><a href="#D">D</a></h1>
+			</section>
+			<section>
+				<h1><a href="#E">E</a></h1>
+			</section>
+			<section>
+				<h1><a href="#F">F</a></h1>
+			</section>
+			<section>
+				<h1><a href="#G">G</a></h1>
+			</section>
+			<section>
+				<h1><a href="#H">H</a></h1>
+			</section>
+			<section>
+				<h1><a href="#I">I</a></h1>
+			</section>
+			<section>
+				<h1><a href="#J">J</a></h1>
+			</section>
+			<section>
+				<h1><a href="#K">K</a></h1>
+			</section>
+			<section>
+				<h1><a href="#L">L</a></h1>
+			</section>
+			<section>
+				<h1><a href="#M">M</a></h1>
+			</section>
+			<section>
+				<h1><a href="#N">N</a></h1>
+			</section>
+			<section>
+				<h1><a href="#O">O</a></h1>
+			</section>
+			<section>
+				<h1><a href="#P">P</a></h1>
+			</section>
+			<section>
+				<h1><a href="#Q">Q</a></h1>
+			</section>
+			<section>
+				<h1><a href="#R">R</a></h1>
+			</section>
+			<section>
+				<h1><a href="#S">S</a></h1>
+			</section>
+			<section>
+				<h1><a href="#T">T</a></h1>
+			</section>
+			<section>
+				<h1><a href="#U">U</a></h1>
+			</section>
+			<section>
+				<h1><a href="#V">V</a></h1>
+			</section>
+			<section>
+				<h1><a href="#W">W</a></h1>
+			</section>
+			<section>
+				<h1><a href="#X">X</a></h1>
+			</section>
+			<section>
+				<h1><a href="#Y">Y</a></h1>
+			</section>
+			<section>
+				<h1><a href="#Z">Z</a></h1>
+			</section>	
+		</div>
+	</div>
+
+	<div class="alpha">
+		<section id="A">
+			<h1>A</h1>
+		</section>
+		<div>
+			<div class="resource">
+				<a href="http://www.sciencemag.org/magazine">AAAS Science Magazine</a><br>
+				<div class="info">
+					<div class="type">Journal Article Database with full text
+					</div>
+					<div class="subject">
+						<div class="subjectbutton">Life Science</div>
+						<div class="subjectbutton">Physical Sciences</div>
+						<div class="subjectbutton">Chemistry</div>
+						<div class="subjectbutton">Engineering</div>
+						<div class="subjectbutton">Philosophy of Science</div>
+					</div>
+					<div class="contents">Online access to full text articles on original scientific research, global news, and commentary, abstracts/summaries, and full text PDFs for issues dating from 1997-current. Science also offers tables of contents, author indexes, and full text HTML when available for issues dating from 1880-1996.
+					</div>
+					<div class="access">The American Association for the Advancement of Science
+					</div>
+					<div class="coverage">1880-current
+					</div>
+				</div>
+			</div>								
+			<div class="resource">
+				<a href="http://proxy.jewell.edu:2048/login?url=http://search.ebscohost.com/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=a9h" target="_blank" linktype="url" style="null">Academic Search Complete</a><a href="http://proxy.jewell.edu:2048/login?url=http://search.ebscohost.com/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=a9h"></a><br>
+				<div class="info">
+					<div class="type">Research database with full text
+					</div>
+					<div class="subject">
+						<div class="subjectbutton"> Multidisciplinary</div>
+					</div>
+					<div class="contents">Academic Search Complete contains indexing and abstracts for more than 12,500 journals, with full text for more than 8,600 of those titles. PDF backfiles to 1887 or further are available for well over one hundred journals, and searchable cited references are provided for more than 1,400 titles.
+					</div>
+					<div class="access">EBSCO
+					</div>
+					<div class="coverage">1887-current
+					</div>
+				</div>
+			</div>	
+			<div class="resource">
+				<a href="http://proxy.jewell.edu:2048/login?url=http://pubs.acs.org/archives/promo/index.html" target="_blank" linktype="url" style="null">American Chemical Society Legacy Archives</a><a href="http://proxy.jewell.edu:2048/login?url=http://pubs.acs.org/archives/promo/index.html"></a>				
+				<div class="info">
+					<div class="type">Organizational database with full text coverage
+					</div>
+					<div class="subject"> 
+						<div class="subjectbutton">History</div>
+						<div class="subjectbutton">Chemistry</div>
+						<div class="subjectbutton">Biology</div>
+						<div class="subjectbutton">Physics</div>
+						<div class="subjectbutton">Medicine</div>
+						<div class="subjectbutton">Agriculture</div>
+						<div class="subjectbutton">Engineering</div>
+					</div>
+					<div class="contents">ACS Legacy Archives offers 464,037 articles, 11,103 issues, and 966 volumes. A license to the ACS Legacy Archives enables researchers to reach through history to understand the chain of discoveries that have led to modern chemistry and greatly influenced such fields as biology, physics, medicine, agriculture, and engineering.
+					</div>
+					<div class="access">American Chemical Society Publications
+					</div>
+					<div class="coverage">1879-1995
+					</div>
+				</div>
+			</div>
+			<div class="resource">
+				<a href="http://proxy.jewell.edu:2048/login?url=http://pubs.acs.org/about.html" target="_blank" linktype="url" style="null">American Chemical Society Web Editions</a><a href="http://proxy.jewell.edu:2048/login?url=http://pubs.acs.org/about.html"></a>
+				<div class="info">
+					<div class="type">Journal database
+					</div>
+					<div class="subject"> 
+						<div class="subjectbutton">Chemistry</div>
+					</div>
+					<div class="contents">ACS Publications publishes more than 35 journals, Chemical & Engineering News, ACS Legacy Archives, and theACS Symposium Seriesvia its web-based platform. Chemical & Engineering News is a weekly magazine published by the American Chemical Society, and is distributed to all ACS members. C&EN editors and reporters based in Europe, the U.S., and Asia cover science and technology, business and industry, government and policy, education, and employment aspects of the chemistry field. With the ACS Journal Archives, ACS Publications provides searchable access to over 130 years of original research in chemistry, including more than 450,000 articles dating back to the inaugural volume of the Journal of the American Chemical Society in 1879. The ACS Symposium SeriesOnline is a peer-reviewed collection of e-books from the ACS Symposium Series and Advances in Chemistry book series. The Series contains an archive of more than 1,200 books dating back to the first Advances in Chemistry Series title published in 1949.</div>
+					<div class="access">Americal Chemical Society Publications
+					</div>
+					<div class="coverage">1879-current
+					</div>
+				</div>
+			</div>
+			<div class="resource">
+				<a href="http://factfinder2.census.gov/faces/nav/jsf/pages/index.xhtml" target="_blank" linktype="url">American FactFinder</a>
+				<div class="info">
+					<div class="type">Statistical database
+					</div>
+					
+					<div class="subject"> 
+						<div class="subjectbutton">Population</div>
+						<div class="subjectbutton">Housing</div>
+						<div class="subjectbutton">Economics</div>
+						<div class="subjectbutton">Geography</div>
+					</div>
+					<div class="contents">American FactFinder provides data collected by the decennial American census about households, income, education, homeownership, and more. Because the census collects data every 10 years, the website also provides a link to the most recent census conducted in 2010.
+					</div>
+					<div class="access">U. S. Census Bureau
+					</div>
+					<div class="coverage">2000
+					</div>
+				</div>
+			</div>
+			<div class="resource">
+				<a href="http://memory.loc.gov/ammem/browse/" target="_blank" linktype="url" style="null">American Memory</a><a href="http://memory.loc.gov/ammem/browse/"></a>
+				<div class="info">
+					<div class="type">Research database
+					</div>
+					
+					<div class="subject"> 
+						<div class="subjectbutton">History</div>
+						<div class="subjectbutton">Anthropology</div>
+						<div class="subjectbutton">Social Studies</div>
+					</div>
+					<div class="contents">American Memory provides free and open access through the Internet to written and spoken words, sound recordings, still and moving images, prints, maps, and sheet music that document the American experience. It is a digital record of American history and creativity. These materials, from the collections of the Library of Congress and other institutions, chronicle historical events, people, places, and ideas that continue to shape America. Comprising more than 9 million items that document U.S. history and culture, American Memory is organized into more than 100 thematic collections based on their original format, their subject matter, or who first created, assembled, or donated them to the Library.
+					</div>
+					<div class="access">Library of Congress
+					</div>
+					<div class="coverage">1400-present
+					</div>
+				</div>
+			</div>
+			<div class="resource">
+				<a href="http://proxy.jewell.edu:2048/login?url=http://search.ebscohost.com/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=pdh" target="_blank" linktype="url" style="null">APA PsycArticles</a><a href="http://proxy.jewell.edu:2048/login?url=http://search.ebscohost.com/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=pdh"></a>				
+				<div class="info">
+				<div class="type">Journal database with full-text
+				</div>
+				
+				<div class="subject"> 
+					<div class="subjectbutton">Psychology</div>
+				</div>
+				<div class="contents"> PsycARTICLES provides full-text for a select number of journals published by APA, the Canadian Psychological Association, Hogrefe Publishing Group and the Educational Publishing Foundation. Articles published from 1985 forward are in both PDF and HTML format. Articles published prior to 1985 are available only in PDF format. All PDFs are searchable.
+				</div>
+				<div class="access">EBSCO
+				</div>
+				<div class="coverage">1985-current
+				</div>
+				</div>
+			</div>
+			<div class="resource">
+				<a href="http://proxy.jewell.edu:2048/login?url=http://search.ebscohost.com/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=aai" target="_blank" linktype="url">Art Index</a>				
+				<div class="info">
+				<div class="type">Research database with abstracts, indexes, and full-text
+				</div>
+				<div class="subject"> 
+					<div class="subjectbutton">Visual Arts</div>
+					<div class="subjectbutton">Film</div>
+				</div>
+				<div class="contents">high-quality indexing of over 600 periodicals, more than 13,000 art dissertations, and almost 200,000 art reproductions, providing examples of styles and art movements, including works by emerging artists. The database includes a database-specific thesaurus and covers fine, decorative and commercial art, as well as folk art, photography, film, and architecture. Topics covered include art history & criticism, architecture & architectural history, archaeology, antiques, museum studies, graphic arts, industrial design, landscape architecture, interior design, folk art, painting, photography, pottery, sculpture, decorative arts, costume design, television and video, motion pictures, advertising art, non-western art, textiles and much more.
+				</div>
+				<div class="access">EBSCO
+				</div>
+				<div class="coverage">1929-current
+				</div>
+				</div>
+			</div>
+			<div class="resource">
+				<a href="http://proxy.jewell.edu:2048/login?url=http://search.ebscohost.com/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=air" target="_blank" linktype="url" style="null">Art Index Retrospective</a>
+				<div class="info">
+					<div class="type">Research database with abstracts, indexes, and full-text
+					</div>
+					<div class="subject"> 
+						<div class="subjectbutton">Visual Arts</div>
+						<div class="subjectbutton">Film</div>
+					</div>
+					<div class="contents">Art Index Retrospective 1929 -1984 provides users access to over half a century of art literature covering fine, decorative, and commercial art. Content includes high-quality indexing of nearly 600 publications, many of which are peer-reviewed, and citations of over 25,000 book reviews.
+					</div>
+					<div class="access">EBSCO
+					</div>
+					<div class="coverage">1929-current
+					</div>
+				</div>
+			</div>
+			<div class="resource">
+				<a href="http://proxy.jewell.edu:2048/login?url=http://newfirstsearch.oclc.org/dbname=Article1st;screen=advanced;FSIP" target="_blank" linktype="url" style="null">ArticleFirst</a><a href="http://proxy.jewell.edu:2048/login?url=http://newfirstsearch.oclc.org/dbname=Article1st;screen=advanced;FSIP"></a>	
+				<div class="info">
+					<div class="type">Research database that provides items listed on table of contents pages of journals, with some full-text
+					</div>
+					<div class="subject"> 
+						<div class="subjectbutton">Business</div>
+						<div class="subjectbutton">Humanities</div>
+						<div class="subjectbutton">Medicine</div>
+						<div class="subjectbutton">Popular Culture</div>
+						<div class="subjectbutton">Science</div>
+						<div class="subjectbutton">Social Science</div>
+						<div class="subjectbutton">Technology</div>
+					</div>
+					<div class="contents">This database has over 16, 000 sources and provides a list of libraries that have the journal title for most items. It is updated daily.			
+					</div>
+					<div class="access">FirstSearch
+					</div>
+					<div class="coverage">1990-current
+					</div>
+				</div>
+			</div>
+			<div class="resource">
+					<a linktype="url" target="_blank" href="http://proxy.jewell.edu:2048/login?url=http://search.ebscohost.com/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=rfh">ATLA Religion with ATLA Serials</a><a href="http://proxy.jewell.edu:2048/login?url=http://search.ebscohost.com/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=rfh"><br /></a>				<div class="info">
+					<div class="type"> Index database
+					</div>
+					<div class="subject"> 
+						<div class="subjectbutton">Religion</div>
+						<div class="subjectbutton">Theology</div>
+					</div>
+					<div class="contents">The ATLA Religion Database with ATLASerials includes more than 570,000 article citations from 1,677 journals (546 currently indexed), more than 237,000 essay citations from over 16,800 multi-author works, more than 525,000 book review citations, and a growing number of multimedia citations.			
+					</div>
+					<div class="access">EBSCO
+					</div>
+					<div class="coverage">1908-current
+					</div>
+				</div>
+			</div>
+		</div>
+		<section id="B">
+			<h1>B</h1>
+			<div class="backtotop"> <a href="#TopNav">^</a></div>
+		</section>
+			<div>
+				<p></a><strong><a href="http://www.state.gov/r/pa/ei/bgn/" target="_blank" linktype="url">Background Notes</a><a href="http://www.state.gov/r/pa/ei/bgn/"><br></a></strong>Access: U.S. State Department &nbsp; &nbsp; &nbsp; &nbsp;<br>Resource Type: Statistical database<br>Subjects covered: History, government, social studies, economy, foreign relations<br>Content: Background Notes include facts about the land, people, history, government, political conditions, economy, and foreign relations of <a href="http://www.state.gov/s/inr/states/">independent states, some dependencies, and areas of special sovereignty</a>. The Background Notes are updated/revised by the Office of Electronic Information and Publications of the Bureau of Public Affairs as they are received from the Department's <a href="http://www.state.gov/countries/">regional bureaus</a>.&nbsp; The website also gives links to Background Notes from 1990-2000.<br>Dates of coverage: 2001-current</p>
+				<p><strong><a href="http://bartleby.com/" target="_blank" linktype="url">Bartleby.com</a><a href="http://bartleby.com/"><br></a></strong><a href="http://bartleby.com/"><strong>&nbsp;</strong></a>Access: Bartleby.com<br>Resource Type: Website offering eBooks<br>Subjects covered: Literature (fiction, non-fiction, reference, verse)<br>Contents: Bartleby.com provides students, researchers, and the intellectually curious with unlimited access to books and information on the web, free of charge.</p>
+				<p><strong><a href="http://www.biography.com/" target="_blank" linktype="url">Biography.com</a><a href="http://www.biography.com/"><br></a></strong>Access: Biography.com<br>Resource Type: Biography website<br>Subjects covered: Biographies, multidisciplinary</p>
+				<p><strong><a href="http://proxy.jewell.edu:2048/login?url=http://www.csa.com/htbin/dbrng.cgi?username=lau29&amp;access=lau2929&amp;db=biolclust-set-c&amp;adv=1" target="_blank" linktype="url">Biological Sciences</a><a href="http://proxy.jewell.edu:2048/login?url=http://www.csa.com/htbin/dbrng.cgi?username=lau29&amp;access=lau2929&amp;db=biolclust-set-c&amp;adv=1"><br></a></strong>Access: ProQuest<br>Resource Type: Research database with some full-text<br>Subjects covered: Biomedicine, zoology, ecology, agriculture, veterinary medicine<br>Content: Supporting over two dozen areas of expertise, this CSA database provides access to literature from over 8,000 serials, as well as conference proceedings, technical reports, monographs and selected books and patents. Biological Sciences updates monthly, and may contain abstracts which have no appeared in print.<br>Dates of coverage: 1982-current</p>
+			</div>
+		<div>
+			<div class="resource">
+				<a href="http://www.sciencemag.org/magazine">AAAS Science Magazine</a><br>
+				<div class="info">
+					<div class="type">Journal Article Database with full text
+					</div>
+					<div class="subject">
+						<div class="subjectbutton">Life Science</div>
+						<div class="subjectbutton">Physical Sciences</div>
+						<div class="subjectbutton">Chemistry</div>
+						<div class="subjectbutton">Engineering</div>
+						<div class="subjectbutton">Economics</div>
+						<div class="subjectbutton">Education</div>
+						<div class="subjectbutton">Philosophy of Science</div>
+						<div class="subjectbutton">Sociology</div>
+					</div>
+					<div class="contents">Online access to full text articles on original scientific research, global news, and commentary, abstracts/summaries, and full text PDFs for issues dating from 1997-current. Science also offers tables of contents, author indexes, and full text HTML when available for issues dating from 1880-1996.
+					</div>
+					<div class="access">The American Association for the Advancement of Science
+					</div>
+					<div class="coverage">1880-current
+					</div>
+				</div>
+			</div>								
+			<div class="resource">
+				<a href="http://proxy.jewell.edu:2048/login?url=http://search.ebscohost.com/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=a9h" target="_blank" linktype="url" style="null">Academic Search Complete</a><a href="http://proxy.jewell.edu:2048/login?url=http://search.ebscohost.com/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=a9h"></a><br>
+				<div class="info">
+					<div class="type">Research database with full text
+					</div>
+					<div class="subject">
+						<div class="subjectbutton"> Multidisciplinary</div>
+					</div>
+					<div class="contents">Academic Search Complete contains indexing and abstracts for more than 12,500 journals, with full text for more than 8,600 of those titles. PDF backfiles to 1887 or further are available for well over one hundred journals, and searchable cited references are provided for more than 1,400 titles.
+					</div>
+					<div class="access">EBSCO
+					</div>
+					<div class="coverage">1887-current
+					</div>
+				</div>
+			</div>	
+			<div class="resource">
+				<a href="http://proxy.jewell.edu:2048/login?url=http://pubs.acs.org/archives/promo/index.html" target="_blank" linktype="url" style="null">American Chemical Society Legacy Archives</a><a href="http://proxy.jewell.edu:2048/login?url=http://pubs.acs.org/archives/promo/index.html"></a>				
+				<div class="info">
+					<div class="type">Organizational database with full text coverage
+					</div>
+					<div class="subject"> 
+						<div class="subjectbutton">History</div>
+						<div class="subjectbutton">Chemistry</div>
+						<div class="subjectbutton">Biology</div>
+						<div class="subjectbutton">Physics</div>
+						<div class="subjectbutton">Medicine</div>
+						<div class="subjectbutton">Agriculture</div>
+						<div class="subjectbutton">Engineering</div>
+					</div>
+					<div class="contents">ACS Legacy Archives offers 464,037 articles, 11,103 issues, and 966 volumes. A license to the ACS Legacy Archives enables researchers to reach through history to understand the chain of discoveries that have led to modern chemistry and greatly influenced such fields as biology, physics, medicine, agriculture, and engineering.
+					</div>
+					<div class="access">American Chemical Society Publications
+					</div>
+					<div class="coverage">1879-1995
+					</div>
+				</div>
+			</div>
+		</div>
+			<section id="C">
+				<h1>C</h1>
+				<div class="backtotop"> <a href="#TopNav">^</a></div>
+			</section>
+			<div>
+				<p><strong><a name="C"></a><a href="http://www.cdc.gov/">Center for Disease Control website<br></a></strong>Access: Center for Disease Control<br>Resource Type: Information resource<br>Subjects covered: Medicine<br>Content: CDC′s Mission is to collaborate to create the expertise, information, and tools that people and communities need to protect their health – through health promotion, prevention of disease, injury and disability, and preparedness for new health threats.<br> Dates of coverage: 1996-current</p>
+				<p><a href="http://proxy.jewell.edu:2048/login?url=http://search.ebscohost.com/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=e5h"><strong>Central &amp; Eastern European Academic Source<br></strong></a>Access: Ebsco<br>Resource Type: Research database with full-text<br>Subjects covered: Multidisciplinary, focusing on Central and Eastern Europe<br>Content: multidisciplinary, multilingual database providing full-text coverage pertaining to all facets of central and eastern European countries. The collection contains more than 400 full-text publications covering many academic areas including business &amp; economics, medical sciences, political science, law, library &amp; information sciences, literature, linguistics, history and sociology relating to this geographic region.<br>Dates of coverage: 1966-current</p>
+				<p><a style="null" linktype="url" target="_blank" href="http://proxy.jewell.edu:2048/login?url=http://www.chicagomanualofstyle.org/home.html"><strong>Chicago Manual of Style<br></strong></a><i>The Chicago Manual of Style Online</i> includes the popular Chicago Style Q&amp;A, a resource that thousands have found entertaining and informative. The Q&amp;A content is fully searchable along with the content of <i>The Chicago Manual of Style</i>. Your queries will return results—clearly distinguishable—from both the <i>Manual</i> and the Chicago Style Q&amp;A. The Chicago Style Q&amp;A also features monthly polls and interviews of interest to anyone who works with words.</p>
+				<p><a href="http://proxy.jewell.edu:2048/login?url=http://www.cro2.org"><strong>Choice Reviews Online<br></strong></a>Access: American Library Association, ACRL<br>Resource Type: Source for reviews on academic media<br>Subjects covered: Multidisciplinary<br>Content: <em>Choice: Current Reviews for Academic Libraries</em> is a source for reviews of academic books, electronic media, and Internet resources of interest to those in higher education. Each year, Choicepublishes more than 7, 000 reviews that are timely, authoritative, concise, and easy to use.<br><em>Dates of coverage: 1988-current</em></p>
+				<p><a href="http://proxy.jewell.edu:2048/login?url=http://chronicle.com"><strong>Chronicle of Higher Education<br></strong></a>Access: The Chronicle<br>Resource Type: Journal package<br>Subjects covered: Multidisciplinary<br>Content: <em>The Chronicle of Higher Education</em> is a source of news, information, and jobs for college and university faculty members and administrators. Online, <em>The Chronicle</em> is published every weekday and features the complete contents of the latest issue; daily news and advice columns; thousands of current job listings; an archive of previously published content; vibrant discussion forums; and career-building tools such as online CV management, salary databases, and more.<br>Dates of coverage: 1995-current</p>
+				<p><a href="http://proxy.jewell.edu:2048/login?url=http://search.ebscohost.com/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=c8h"><strong>CINAHL Full-text<br></strong></a>Access: Ebsco<br>Resource Type: Research database with full-text<br>Subjects covered: Medicine, nursing, bioethics<br>Content: CINAHL provides full text for more than 610 journals. This database also provides indexing for more than 3,000 journals from the fields of nursing and allied health. The database contains more than 2.3 million records.<br>Dates of coverage: 1981-current</p>
+				<p><a href="http://proxy.jewell.edu:2048/login?url=http://search.ebscohost.com/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=cgh"><strong>Cochrane Controlled Trials Register<br></strong></a>Access: Ebsco<br>Resource Type: Bibliographical database<br>Subjects covered:&nbsp; Medicine, healthcare<br>Content: CCTR is a database of definitively controlled trials. These controlled trials have been identified by the distinguished contributors to the Cochrane Collaboration. They and others, as part of an international effort to search the world's health care journals (and other sources of information) systematically, have combined results to create an unbiased source of data for systematic reviews. CCTR contains over 300,000 bibliographic references to controlled trials in health care. Cochrane groups and other organizations contribute their specialized registers; and these registers—together with references to clinical trials identified in MEDLINE and EMBASE—form the CCTR database. This database is limited to 10 simultaneous users at one time.<br>Dates of coverage: 1991-current</p>
+				<p><a href="http://proxy.jewell.edu:2048/login?url=http://search.ebscohost.com/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=chh"><strong>Cochrane Database of Systematic Reviews<br></strong></a>Access: Ebsco<br>Resource Type: Abstracts database with some full-text<br>Subjects covered: Medicine, healthcare<br>Content: Cochrane Reviews are systematic reviews of primary research in human health care and health policy. They&nbsp;investigate the effects of interventions (literally meaning to intervene to modify an outcome)&nbsp;for prevention, treatment and rehabilitation. They also assess the accuracy of a diagnostic test for a given condition in a specific patient group and setting. This database is limited to 10 simultaneous users at one time.<br>Dates of coverage: 1991-current</p>
+				<p><strong><a linktype="url" target="_blank" href="http://www.ecfr.gov/cgi-bin/text-idx?sid=099beb37659e3d5d37d68c6358a9287f&amp;c=ecfr&amp;tpl=/ecfrbrowse/Title46/46tab_02.tpl">Code of Federal Regulations</a><a href="http://origin.www.gpoaccess.gov/cfr/"><br></a></strong>Access: U. S. Government Printing Office<br>Resource Type: Research database<br>Subjects: Government<br>Content: The Code of Federal Regulations (CFR) is the codification of the general and permanent rules published in the Federal Register by the executive departments and agencies of the Federal Government. It is divided into 50 titles that represent broad areas subject to Federal regulation. Each volume of the CFR is updated once each calendar year and is issued on a quarterly basis.<br>Dates of coverage: 1996-present</p>
+				<p><a href="http://proxy.jewell.edu:2048/login?url=http://search.ebscohost.com/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=ufh"><strong>Communications and Mass Media Complete<br></strong></a>Access: Ebsco<br>Resource Type: Research database<br>Subjects covered: Communications, mass media<br>Content: CMMC offers cover-to-cover ("core") indexing and abstracts for more than 570 journals, and selected ("priority") coverage of nearly 200 more, for a combined coverage of more than 770 titles. Furthermore, this database includes full text for over 480 journals. Many major journals have indexing, abstracts, PDFs and searchable cited references from their first issues to the present (dating as far back as 1915). CMMC contains a sophisticated Communication Thesaurus and comprehensive reference browsing (i.e. searchable cited references for peer-reviewed journals covered as "core"). In addition, CMMC features over 5,400 Author Profiles, providing biographical data and bibliographic information, and covering the most prolific, most cited, and most frequently searched for authors in the database.<br>Dates of coverage: 1915-present</p>
+				<p><a href="http://www.gpo.gov/fdsys/browse/collection.action?collectionCode=CPD"><strong>Compilation of Presidential Documents<br></strong></a>Access: U. S. Government Printing Office<br>Resource Type: Government document site<br>Subjects covered: Government<br>Content: The Compilation of Presidential Documents collection consists of the Weekly Compilation of Presidential Documents and the Daily Compilation of Presidential Documents which are the official publications of materials released by the White House Press Secretary.<br>Dates of coverage: 1992-current</p>
+				<p><a href="http://proxy.jewell.edu:2048/login?url=http://www.csa.com/htbin/dbrng.cgi?username=lau29&amp;access=lau2929&amp;db=cpi-set-c&amp;adv=1"><strong>Conference Paper Index<br></strong></a>Access: ProQuest<br>Resource Type: Research database<br>Subjects covered: Agriculture, biochemistry, chemistry, chemical engineering, forestry, biology, environmental science, soil science, biotechnology, clinical medicine<br>Content: Conference Papers provides citations to papers and poster sessions presented at major scientific meetings around the world. Information is derived from final programs, abstracts booklets and published proceedings, as well as from questionnaire responses. Records include complete ordering information to obtain preprints, abstracts, proceedings and other publications derived from the conference, together with title and author information needed to track the specific papers.<br>Dates of coverage: 1982-current</p>
+				<p><strong><a linktype="url" target="_blank" href="http://www.gpo.gov/fdsys/browse/collection.action?collectionCode=CREC">Congressional Record</a><a href="http://www.gpoaccess.gov/crecord/index.html"><br></a></strong>Access: U. S. Government Printing Office<br>Resource Type: Government record<br>Subjects covered: Government&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>Content: The Congressional Record is the official record of the proceedings and debates of the United States Congress. It is published daily when Congress is in session. At the back of each daily issue is the "Daily Digest," which summarizes the day's floor and committee activities.<br>Dates of coverage: 1994-current</p>
+				
+			</div>
+		
+		<section id="D">
+			<h1>D</h1>'
+			<div class="backtotop"> <a href="#TopNav">^</a></div>
+		</section>
+		<div>
+			<p></a><strong><a href="http://proxy.jewell.edu:2048/login?url=http://search.ebscohost.com/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=dah">Database of Abstracts of Reviews of Effectiveness<br /></a></strong>Access: Ebsco<br />Resource Type: Research database<br />Subjects covered: Medicine<br />Content: <em>DARE </em>contains 15,000 abstracts of systematic reviews including over 6,000 quality assessed reviews and details of all Cochrane reviews and protocols. The database is focused on systematic reviews of the effects of health interventions and includes reviews of: interventions that are clearly health related; interventions that have the potential to affect health; adverse effects; diagnostic and prognostic studies; individual patient data (IPD). This database is limited to 10 simultaneous users at a time.<br />Dates of coverage: Varies</p>
+			<p><a href="http://www.osti.gov/bridge/"><strong>DOE Energy Citations<br /></strong></a>Access: U. S. Department of Energy<br />Resource Type: Citation database<br />Subjects covered: Physics, chemistry, biology, environmental sciences, energy technologies, engineering, computer and information science, renewable energy<br />Content: The <strong>Information Bridge: DOE Scientific and Technical Information</strong> provides free public access to over 266,000 full-text documents and bibliographic citations of Department of Energy (DOE) research report literature.<br />Dates of coverage: 1991-current</p>
+		</div>
+		<section id="E">
+			<h1>E</h1>
+			<div class="backtotop"> <a href="#TopNav">^</a></div>
+		</section>
+		<div>
+			<p><a href="http://proxy.jewell.edu:2048/login?url=http://search.ebscohost.com/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=ehh"><strong>Education Research Complete<br /></strong></a>Access: Ebsco<br />Resource Type: Research database with full-text<br />Subjects covered: Education and educational specialties<br />Content: Topics covered include all levels of education from early childhood to higher education, and all educational specialties, such as multilingual education, health education, and testing. <strong>Education Research Complete</strong> also covers areas of curriculum instruction as well as administration, policy, funding, and related social issues. The database provides indexing and abstracts for more than 2,300 journals, as well as full text for over 1,400 journals. This database also includes full text for more than 550 books and monographs, and full text for numerous education-related conference papers.<br />Dates of coverage: 1972-current</p>
+			<p><a href="http://proxy.jewell.edu:2048/login?url=http://www.britannica.com/"><strong>Encyclopedia Britannica<br /></strong></a>Access: <span style="font-family: arial, helvetica, sans-serif;"><span style="line-height: 15px;">Encyclop&aelig;dia Britannica, Inc.<br /></span></span>Resource Type: Encyclopedia database<br />Subjects covered: Multidiscliplinary<br />Content: Britannica online has over 75,000 articles on a wide variety of topics, including hundreds of articles not found in the print version of Britannica. Includes links to 166,000 related websites, over 27,000 images and maps, plus 3,300 animations, videos, and audio files. Britannica Online includes the Encyclopedia Britannica as well as Merriam-Webster&rsquo;s Collegiate Dictionary and Thesaurus, the Britannica Student Encyclopedia, and the Britannica Book of the Year. It also provides an internet directory to more than 3,000 sites selected by Britannica editors.<br />Dates of coverage: 1994-current</p>
+			<p><a href="http://proxy.jewell.edu:2048/login?url=http://newfirstsearch.oclc.org/dbname=ERIC;screen=advanced;FSIP"><strong>ERIC<br /></strong></a>Access: FirstSearch<br />Resource Type: Research database&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />Subjects Covered: Education and educational specialties<br />Content: The ERIC (Education Resources Information Center) database is sponsored by the U.S. Department of Education to provide extensive access to educational-related literature. ERIC provides ready access to education literature to augment American education by increasing and facilitating the use of educational research and information to improve practice in learning, teaching, educational decision-making, and research. ERIC provides coverage of journal articles, conferences, meetings, government documents, theses, dissertations, reports, audiovisual media, bibliographies, directories, books and monographs.<br />Dates of coverage: 1966-current</p>
+		</div>
+		<section id="F">
+			<h1>F</h1>
+			<div class="backtotop"> <a href="#TopNav">^</a></div>
+		</section>
+		<div>
+			<p><a href="http://www.gpoaccess.gov/fr/index.html"><strong>Federal Register<br /></strong></a>Access: U. S. Government Printing Office<br />Resource Type: Government record site<br />Subjects covered: Government<br />Content: Published by the Office of the Federal Register, National Archives and Records Administration (NARA), the Federal Register is the official daily publication for rules, proposed rules, and notices of Federal agencies and organizations, as well as executive orders and other presidential documents. It is updated daily by 6 a.m. and is published Monday through Friday, except Federal holidays.<br />Dates of coverage: 1994-current</p>
+			<p><a href="http://proxy.jewell.edu:2048/login?url=http://digital.films.com/portalplaylists.aspx?cid=1637&amp;aid=7290"><strong>Films on Demand<br /></strong></a>Access: Films Media Group<br />Resource Type: Media database<br />Subjects covered: Multidisciplinary<br />Content: Films on Demand is a library of thousands of streaming videos across all disciplines from Films Media Group. All users can search and view films or specific segments of films. If you establish a user account from within Films on Demand you can also create playlists from the various films/segments for your own use or for sharing with other users.<br />Dates of coverage: Varies</p>
+			<p><a href="http://proxy.jewell.edu:2048/login?url=http://newfirstsearch.oclc.org/FSIP"><strong>FirstSearch<br /></strong></a>Access: FirstSearch<br />Resource Type: Host database<br />Subjects covered: Multidisciplinary<br />Content: FirstSearch connects you to information in a wide range of subjects in 16 different databases.<br />Dates of coverage: Varies by database</p>
+		</div>
+		<section id="G">
+			<h1>G</h1>
+			<div class="backtotop"> <a href="#TopNav">^</a></div>
+		</section>
+		<div>
+			<p><a href="http://proxy.jewell.edu:2048/login?url=http://find.galegroup.com/gvrl/start.do?prodId=GVRL&amp;userGroupName=jewell_main"><strong>Gale Virtual Reference Library<br /></strong></a>Access: Gale<br />Resource Type: Research database<br />Subjects covered: Multidisciplinary<br />Content: GVRL allows researchers to access more than 5,000 eBooks. <em>Gale Virtual Reference Library</em> offers multi-volume encyclopedias, biographical collections, business plan handbooks, company history compilations, consumer health references, and specialized reference sources.<br />Dates of coverage: Varies</p>
+			<p><a href="http://www.gpoaccess.gov/"><strong>GPO Access<br /></strong></a>Access: U. S. Government Printing Office<br />Resource Type: Government information<br />Subjects covered: Government<br />Content: <em>GPO Access</em> is a service of the U.S. Government Printing Office that provides free electronic access to a wealth of important information products produced by the Federal Government. The information provided on this site is the official, published version and the information retrieved from <em>GPO Access</em> can be used without restriction, unless specifically noted.<br />Dates of coverage: 1994-current</p>
+			<p><a href="http://proxy.jewell.edu:2048/login?url=http://search.ebscohost.com/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=8gh"><strong>GreenFILE<br /></strong></a>Access: Ebsco<br />Resource Type: Research database<br />Subjects covered: Environmental sciences<br />Content: GreenFILE offers well-researched information covering all aspects of human impact to the environment. Its collection of scholarly, government and general-interest titles includes content on the environmental effects of individuals, corporations and local/national governments, and what can be done at each level to minimize these effects. Multidisciplinary by nature, GreenFILE draws on the connections between the environment and a variety of disciplines such as agriculture, education, law, health and technology. The database provides indexing and abstracts for more than 600,000 records, as well as Open Access full text for more than 6,300 records.<br />Dates of coverage: 1913-current</p>
+		</div>
+		<section id="H">
+			<h1>H</h1>
+			<div class="backtotop"> <a href="#TopNav">^</a></div>
+		</section>
+		<div>
+			<p></a><strong><a style="null" linktype="url" target="_blank" href="http://proxy.jewell.edu:2048/login?url=http://www.heritagequestonline.com">Heritage Quest Online<br /></a></strong>Access: ProQuest<br />Resource Type: Research Database<br />Subjects covered: American Genealogy<br />Content:&nbsp;The collection consists of six core data sets:&nbsp;<strong>U.S. Federal Censuses</strong> from 1790 through 1930, with name indexes for many decades. In total the collection covers more than 140 million names. <strong>Genealogy and local history books</strong>&nbsp;deliver more than 7 million digitized page images from over 28,000 family histories, local histories, and other books. P<strong>eriodical Source Index (PERSI)</strong> contains more than 2 million records covering titles published around the world since 1800. <strong>Revolutionary War records</strong>&nbsp;contains original images from pension and bounty land warrant application files help to identify more than 80,000 American Army, Navy, and Marine officers and enlisted men from the Revolutionary War era. <strong>Freedman&rsquo;s Bank Records</strong>, with more than 480,000 names of bank applicants, their dependents, and heirs from 1865&ndash;1874, offers valuable data that can provide important clues to tracing African American ancestors prior to and immediately after the Civil War. <strong>LexisNexis U.S. Serial Set</strong>&nbsp;records the memorials, petitions, private relief actions made to the U.S. Congress back to 1789, with a total of more than 480,000 pages of information.</p>
+			<p><a href="http://proxy.jewell.edu:2048/login?url=http://search.ebscohost.com/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=hia"><strong>Historical Abstracts<br /></strong></a>Access: Ebsco<br />Resource Type: Abstract database with some full text<br />Subjects covered: History<br />Content: This database provides searchable access to abstracts of journal articles and citations to book titles and dissertations gleaned from over 1700 journal titles dealing with the history of the world (excluding North America) from 1450 to the present. This authoritative database provides indexing of more than 2,300 academic historical journals in over 40 languages.<br />Dates of coverage: 1955-current</p>
+		</div>
+		<section id="I">
+			<h1>I</h1>
+			<div class="backtotop"> <a href="#TopNav">^</a></div>
+		</section>
+		<div>
+			<p></a><strong><a href="http://proxy.jewell.edu:2048/login?url=http://www.iop.org/Journals/bytitle" linktype="url">Institute of Physics&nbsp;Science<br /></a></strong>Access: Institute of Physics<br />Resource Type: Journal database<br />Subjects covered: Physics, engineering, material sciences<br />Content: IOP offers access to abstracts and some full-text content from more than 60 titles covering different areas of science and engineering, which together provide access to more than 400,000 articles from 1874 to the present day<br />Dates of coverage: 1874-current</p>
+			<p><strong><a href="http://proxy.jewell.edu:2048/login?url=http://search.proquest.com/iimpft?accountid=15047" linktype="url">International Index to Music Periodicals (IIMP)</a><a href="http://proxy.jewell.edu:2048/login?url=http://iimpft.chadwyck.com/cgi/search"><br /></a></strong>Access: ProQuest<br />Resource Type: Research database<br />Subjects covered: Music<br />Content: IIMP offers indexing and abstracts for a range of music journals from 1874 to the present, covering the scholarly to the popular. With over 900,000 indexed articles, including an extensive backfile, it offers unique and comprehensive subject coverage - from music education, performance studies, composition, theory and ethnomusicology to jazz, hip-hop and all forms of popular music.<br />Dates of coverage: 1874-current</p>
+		</div>
+		<section id="J">
+			<h1>J</h1>
+			<div class="backtotop"> <a href="#TopNav">^</a></div>
+		</section>
+		<div>
+			<p></a><a href="http://proxy.jewell.edu:2048/login?url=http://www.jstor.org/search"><strong>JSTOR<br /></strong></a>Access: JSTOR<br />Resource Type: Journal article database<br />Subjects covered: Multidisciplinary<br />Content: JSTOR provides access to archived backfiles of more than a thousand journals in Arts &amp; Sciences, Business, Language &amp; Literature, General Science, Ecology &amp; Botany, and Music. Journals may be browsed or searched.<br />Dates of coverage: 1890-current</p>
+			<p><a href="http://proxy.jewell.edu:2048/login?url=http://access.NewspaperArchive.com" linktype="url"></a>
+		</div>
+		<section id="K">
+			<h1>K</h1>
+			<div class="backtotop"> <a href="#TopNav">^</a></div>
+		</section>
+		<section id="L">
+			<h1>L</h1>
+			<div class="backtotop"> <a href="#TopNav">^</a></div>
+		</section>
+		<div>
+			<p><strong><a linktype="url" target="_blank" href="http://proxy.jewell.edu:2048/login?url=http://www.lexisnexis.com/hottopics/lnacademic">LexisNexis: Academic</a></strong><br />Access: Lexis Nexis<br />Resource Type: Research database<br />Subjects covered: Business, criminal justice, economics, law, management, marketing, insurance, merchandising, political &nbsp; science<br />Content: LexisNexis Academic provides full-text of more than 350 newspapers from the U.S. and around the world, many of which are updated daily. It &nbsp; also offers access to more than 300 magazines and journals, over 600 newsletters, and campus news from nearly 300 individual college/university papers. There are also broadcast transcripts from major television and radio networks, as well as political transcripts covering Congressional committee hearings, press &nbsp; briefings from the State, Justice, and Defense departments, and presidential news conferences. LexisNexis Academic provides a full range of credible sources &nbsp; for business information, including business and financial news, U.S. and international company financial information from government or private sources, &nbsp; market research, industry reports, and actual SEC filings. Finally, LexisNexis Academic also offers access to primary source material such as case law, statutes and regulations or dive into secondary source materials such as legal news or law reviews for background or analysis of a legal topic.<br />Dates of coverage: Varies with source</p>
+			<p><strong><a href="http://proxy.jewell.edu:2048/login?url=http://search.ebscohost.com/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=lxh">Library, Information Science, and Technology Abstracts<br /></a></strong><a href="http://proxy.jewell.edu:2048/login?url=http://search.ebscohost.com/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=lxh"><strong>&nbsp;</strong></a>Access: Ebsco<br />Resource Type: Research database<br />Subjects covered: Bibliometrics, cataloging, classification, information management, librarianship, online information retrieval<br />Content: LISTA indexes more than 560 core journals, nearly 50 priority journals, and nearly 125 selective journals; plus books, research reports and proceedings.<br />Dates of coverage: 1960-current</p>
+			<p><a href="http://proxy.jewell.edu:2048/login?url=http://www.librarymusicsource.com"><strong>Library Music Source<br /></strong></a><a href="http://proxy.jewell.edu:2048/login?url=http://www.librarymusicsource.com"><strong>&nbsp;</strong></a>Access: CD Sheet Music<br />Resource Type: Collection of sheet music<br />Subjects covered: Music<br />Content: Authorized users will have access and command of over 300,000 pages of sheet music from over 35,000 works including the entire piano works of Chopin, all the songs of Schubert, all the organ music of J. S. Bach, and all the orchestra parts and scores of Beethoven, to cite only a few examples. Sheet music is downloadable.</p>
+			<p><a href="http://locatorplus.gov/cgi-bin/Pwebrecon.cgi?DB=local&amp;PAGE=First"><strong>LocatorPlus-National Library of Medicine<br /></strong></a><a href="http://locatorplus.gov/cgi-bin/Pwebrecon.cgi?DB=local&amp;PAGE=First"><strong>&nbsp;</strong></a>Access: National Institutes of Health<br />Resource Type: Online journal catalog<br />Subjects covered: Medicine<br />Content: NLM Gateway allows you to search several databases at the same time, including MEDLINE/PubMed, OLDMEDLINE, LOCATORplus, MEDLINEplus, DIRLINE, AIDS Meetings, Health Services Research Meetings, Space Life Sciences Meetings, HSRProj, and more. The databases index books, journal articles, conference proceedings, health topics, drug information, and research projects in progress. From these, there are over 1.2 million catalog records for books, audiovisuals, journals, computer files, and other materials.&nbsp; NLM is updated continuously.<br />Dates of coverage: Varies</p>
+		</div>
+		<section id="M">
+			<h1>M</h1>
+			<div class="backtotop"> <a href="#TopNav">^</a></div>
+		</section>
+		<div>
+			<p></a><a href="http://proxy.jewell.edu:2048/login?url=http://newfirstsearch.oclc.org/dbname=MEDLINE;screen=advanced;FSIP"><strong>MEDLINE (FirstSearch)<br /></strong></a>Access: FirstSearch<br />Resource Type: Research database<br />Subjects covered: Clinical medicine, dentistry, education, experimental medicine, health services administration, nursing, nutrition, pathology, toxicology, psychiatry, and veterinary medicine<br />Content: MEDLINE has access to more than 19,000 sources and nearly 19,000,000 records. It is updated daily<br />Dates of coverage: 1950-current</p>
+			<p><a href="http://www.nlm.nih.gov/medlineplus/"><strong>MedlinePlus Health Information<br /></strong></a><a href="http://www.nlm.nih.gov/medlineplus/"><strong>&nbsp;</strong></a>Access: National Institutes of Health<br />Resource Type: Organizational website<br />Subjects covered: Medicine<br />Content: MedlinePlus is the National Institutes of Health's Web site for patients and their families and friends. Produced by the National Library of Medicine, it brings you information about diseases, conditions, and wellness issues in language you can understand. MedlinePlus offers reliable, up-to-date health information for free. You can use MedlinePlus to learn about the latest treatments, look up information on a drug or supplement, find out the meanings of words, or view medical videos or illustrations. You can also get links to the latest medical research on your topic or find out about clinical trials on a disease or condition.<br />Dates of coverage: 1998-current</p>
+			<p><strong><a href="http://proxy.jewell.edu:2048/login?url=http://www.micromedexsolutions.com/micromedex2/librarian" linktype="url">Micromedex Healthcare</a><a href="http://www.thomsonhc.com/"><br /></a></strong>Access: Thomson Reuters<br />Resource Type: Informational database<br />Subjects covered: Medicine<br />Content: Micromedex Healthcare provides drug and dosage information, toxicologic substances and patient information databases, and other information and data to support clinical care decisions.</p>
+			<p><a href="http://proxy.jewell.edu:2048/login?url=http://search.ebscohost.com/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=fxh"><strong>Middle Eastern and Central Asian Studies<br /></strong></a>Access: Ebsco<br />Resource type: Bibliographic Index<br />Subjects covered: research, policy and scholarly discourse on the countries and peoples of the Middle East, Central Asia and North Africa.<br />Content: contains more than 639,000 records and coverage spans from 1900 and earlier to the present. Over 15,000 records of recently published and grey literature are added annually. Subject coverage includes: political affairs &amp; law, international relations, economic affairs - business &amp; industry, cultural heritage, arts &amp; humanities, society &amp; social welfare, ethnic diversity &amp; anthropology, significant religious events &amp; movements and recent history (1900 - present) &amp; archaeology.<br />Coverage: 1914-present</p>
+			<p><a linktype="url" target="_blank" href="http://www.sos.mo.gov/mdh/"><strong>Missouri Digital Heritage</strong></a><br />Access: Missouri State Library<br />Resource Type: Primary Source Archival Database<br />Subjects covered: <span style="font-family: 'Open Sans', sans-serif; font-size: 13px; text-align: justify;">More than 6.8 million records can be accessed through Missouri Digital Heritage, including the collections of the Missouri State Archives, the Missouri State Library and other institutions from across the state. T<span style="font-family: 'Open Sans', sans-serif; font-size: 13px;">hrough the Missouri Digital Heritage Initiative, the Missouri State Archives and the Missouri State Library, in partnership with the State Historical Society of Missouri, are assisting institutions across the state in digitizing their records and placing them online for easy access.&nbsp;</span></span></p>
+			<p><a href="http://proxy.jewell.edu:2048/login?url=http://search.ebscohost.com/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=mzh"><strong>MLA Bibliography<br /></strong></a>Access: Ebsco<br />Resource Type: Bibliographic citations database<br />Subjects covered: Multidisciplinary<br />Content: The Modern Language Association (MLA) International Bibliography provides searchable access to more than 2 million bibliographic citations to journal articles, books, dissertations, and scholarly Web sites. It indexes materials in academic disciplines such as language, literature, folklore, linguistics, literary theory and criticism, and the dramatic arts. Coverage includes literature from all over the world -- Africa, Asia, Australia, Europe, and North and South America.<br />Dates of coverage: 1926-current</p>
+		</div>
+		<section id="N">
+			<h1>N</h1>
+			<div class="backtotop"> <a href="#TopNav">^</a></div>
+		</section>
+		<div>
+			<p></a><a href="http://proxy.jewell.edu:2048/login?url=http://williamjewell.naxosmusiclibrary.com/"><strong>Naxos Music Library<br /></strong></a>Access: Naxos Digital Services<br />Resource Type: Online music library<br />Subjects covered: Music<br />Content: Currently, Naxos offers streaming access to more than 46,000 CDs with more than 653,000 tracks, standard and rare repertoire. Over 800 new CDs are added to the library every month. The library offers the complete Naxos and Marco Polo catalogues plus the complete catalogues or selected titles from over 250 classical, jazz and world music labels with more labels joining every month. Classic pop and rock music as well as Chinese orchestral music are also represented. It is limited to 10 simultaneous users at a time.</p>
+			<p><a href="http://proxy.jewell.edu:2048/login?url=http://access.NewspaperArchive.com" linktype="url"><strong>Newspaper Archive<br /></strong></a><a href="http://proxy.jewell.edu:2048/login?url=http://access.NewspaperArchive.com"><strong>&nbsp;</strong></a>Access: Newspaperarchive.org<br />Resource Type: Historical newspapers<br />Subjects covered: News&nbsp;<br />Content:&nbsp;NewspaperARCHIVE.com features over 120 million newspaper pages dating back from 1609 to the present. Includes&nbsp;community news, family history, world news, national news and more.</p>
+			<p><a href="http://www.ntis.gov/"><strong>National Technical Information Service (NTIS)<br /></strong></a>Access: U. S. Department of Commerce<br />Resource Type: Research database<br />Subjects covered: Science, engineering, business<br />Content: The National Technical Information Service serves as the largest central resource for government-funded scientific, technical, engineering, and business related information available today. For more than 60 years NTIS has assured businesses, universities, and the public timely access to approximately 3 million publications covering over 350 subject areas. Our mission supports the Department of Commerce mission to promote the nation's economic growth by providing access to information that stimulates innovation and discovery.<br />Dates of coverage: 1964-current</p>
+		</div>
+		<section id="O">
+			<h1>O</h1>
+			<div class="backtotop"> <a href="#TopNav">^</a></div>
+		</section>
+		<div>
+			<p></a><a href="http://proxy.jewell.edu:2048/login?url=http://www.oed.com"><strong>Oxford English Dictionary<br /></strong></a><a href="http://proxy.jewell.edu:2048/login?url=http://www.oed.com"><strong>&nbsp;</strong></a>Access: Oxford University Press<br />Resource Type: Online dictionary<br />Subjects covered: Multidisciplinary<br />Content: The Oxford English Dictionary (OED) is widely regarded as the accepted authority on the English language. It is a guide to the meaning, history, and pronunciation of 600,000 words&mdash; past and present&mdash;from across the English-speaking world. It is updated every three months.<br />Dates of coverage: 1857-current</p>
+			<p><span style="font-size: 9pt; font-family: Arial, sans-serif; background-position: initial initial; background-repeat: initial initial;"><a linktype="url" target="_blank" href="http://proxy.jewell.edu:2048/login?url=http://www.oxfordislamicstudies.com/"><strong>Oxford Islamic Studies Online</strong></a><br /></span><span style="font-size: 9pt; font-family: Arial, sans-serif; background-position: initial initial; background-repeat: initial initial;">Access:<span>&nbsp;</span></span>Oxford University Press<br /> Resource Type: Reference<br /><span style="font-size: 9pt; font-family: Arial, sans-serif;"><span style="background-position: initial initial; background-repeat: initial initial;">Subjects covered: Islamic Studies<br /></span></span><span style="font-size: 9pt; line-height: 115%; font-family: Arial, sans-serif;">This resource is available on campus only.<br /></span><span style="font-size: 9pt; font-family: Arial, sans-serif; background-position: initial initial; background-repeat: initial initial;">Contents: </span><span style="font-size: 9pt; font-family: Arial, sans-serif;">This resource brings together current scholarship in the field for to foster a more accurate and informed understanding of the Islamic world.<span>&nbsp;</span><em><span style="font-style: normal;">It</span></em><span>&nbsp;</span>features reference content and commentary by renowned scholars in areas such as global Islamic history, concepts, people, practices, politics, and culture, and is regularly updated. <em>Oxford Islamic Studies Online </em><em><span style="font-style: normal;">e</span></em>ncompasses over 5,000 reference entries, chapters from scholarly and introductory works, Qur'anic materials, primary sources, images, maps, and timelines,<em> </em><em><span style="font-style: normal;">and </span></em>offers a multi-layered reference experience designed to provide a first stop for anyone needing information and context on Islam.<o:p></o:p></span></p>
+		</div>
+		<section id="P">
+			<h1>P</h1>
+			<div class="backtotop"> <a href="#TopNav">^</a></div>
+		</section>
+		<div>
+			<p></a><a href="http://proxy.jewell.edu:2048/login?url=http://newfirstsearch.oclc.org/dbname=PapersFirst;screen=advanced;FSIP"><strong>PapersFirst<br /></strong></a>Access: FirstSearch&nbsp;<br />Resource Type: Index of papers presented at conferences worldwide<br />Subjects covered: Multidisciplinary<br />Content: This database covers every published congress, symposium, conference, exposition, workshop and meeting received by The British Library Document Supply Centre. It is updated semi-monthly.<br />Dates of coverage: 1993-current</p>
+			<p><a href="http://proxy.jewell.edu:2048/login?url=http://search.ebscohost.com/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=phl"><strong>Philosopher&rsquo;s Index<br /></strong></a><a href="http://proxy.jewell.edu:2048/login?url=http://search.ebscohost.com/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=phl"><strong>&nbsp;</strong></a>Access: Ebsco<br />Resource Type: Bibliographic database with abstracts<br />Subjects covered: Philosophy<br />Content: The Philosopher's Index monitors over 550 journals from more than 40 countries and is updated quarterly. Major areas of coverage include aesthetics, axiology, metaphilosophy, metaphysics, philosophical anthropology, philosophy of education, philosophy of epistemology, philosophy of ethics, philosophy of history, philosophy of language, philosophy of logic, philosophy of religion, philosophy of science, political philosophy, and social philosophy. This resource is limited to 4 simultaneous users at a time.<br />Dates of coverage: 1940-current</p>
+			<p><a href="http://proxy.jewell.edu:2048/login?url=http://vnweb.hwwilsonweb.com/hww/jumpstart.jhtml?prod=PLAY"><strong>Play Index<br /></strong></a>Access: Ebsco<br />Resource Type: Research database<br />Subjects covered: Theater<br />Content: Users can find citations for over 31,000 plays, and search over 600 monologues. Descriptive annotations summarize plots and indicate any musical requirements. When possible, this database links to full-text plays.<br />Dates of coverage: 1949-current</p>
+			<p><a href="http://proxy.jewell.edu:2048/login?url=http://search.ebscohost.com/login.aspx?authtype=ip,uid&amp;profile=pov"><strong>Points of View Reference Center<br /></strong></a><a href="http://proxy.jewell.edu:2048/login?url=http://search.ebscohost.com/login.aspx?authtype=ip,uid&amp;profile=pov"><strong>&nbsp;</strong></a>Access: Ebsco<br />Resource type: Full-text research database<br />Subjects covered: Current issues and events<br />Content: provides more than 280 topics, each with an overview (objective background/description), point (argument), counterpoint (opposing argument), and Critical Thinking Guide. Topics covered include: affirmative action, cloning, DNA profiling, HIV/AIDS status disclosure, immigration, Iraq, Israel &amp; the Palestinians, Katrina and FEMA response, nuclear proliferation, separation of church and state, standardized testing, stem cell research, tax cuts, voting machines, and many more. Points of View Reference Center includes more than 1,300 main essays. The database also offers guides to debate, developing arguments and writing position papers.<br />Dates of coverage: 1975-present</p>
+			<p><a href="http://proxy.jewell.edu:2048/login?url=http://newfirstsearch.oclc.org/dbname=Proceedings;screen=advanced;FSIP"><strong>ProceedingsFirst<br /></strong></a><a href="http://proxy.jewell.edu:2048/login?url=http://newfirstsearch.oclc.org/dbname=Proceedings;screen=advanced;FSIP"><strong>&nbsp;</strong></a>Access: FirstSearch<br />Resource Type: Index of conference proceedings<br />Subjects covered: Multidisciplinary<br />Content: This database covers every published congress, symposium, conference, exposition, workshop and meeting received by The British Library Document Supply Centre. Each record also contains a list of the papers presented at that meeting. The index is updated semi-weekly (twice a week).<br />Dates of coverage: 1993-current</p>
+			<p><a href="http://proxy.jewell.edu:2048/login?url=http://muse.jhu.edu/search"><strong>Project MUSE<br /></strong></a><a href="http://proxy.jewell.edu:2048/login?url=http://muse.jhu.edu/search"><strong>&nbsp;</strong></a>Access: Project MUSE<br />Resource Type: Journal article database with full-text<br />Subjects covered: Multidisciplinary focusing on humanities and social sciences<br />Content: Project MUSE is a full-text online database that currently contains over 215,000 articles from 490 journals. The journals in this database are scholarly, peer-reviewed, and indexed.<br />Coverage: 1963-current</p>
+			<p><a href="http://proxy.jewell.edu:2048/login?url=http://search.proquest.com/?accountid=15047"><strong>ProQuest Central<br /></strong></a><a href="http://proxy.jewell.edu:2048/login?url=http://search.proquest.com/?accountid=15047"><strong>&nbsp;</strong></a>Access: ProQuest<br />Resource type: Searchable aggregated database with full-text<br />Subjects covered: Multidisciplinary<br />Content: Interface allows users to search up to 4 article databases; Biological Sciences, International Index to Music Periodicals, ProQuest Central, and Wall Street Journal. The ProQuest Central database includes over 40 smaller databases holding material from over 17,000 sources covering 160 subjects. Over half the resources offer full-text online.<br />Coverage: 1905-current</p>
+			<p><a href="http://www.ncbi.nlm.nih.gov/sites/entrez"><strong>PubMed<br /></strong></a>Access: National Institutes of Health<br />Resource Type: Reference and abstract database<br />Subjects covered: Biomedical and life sciences<br />Content: Many PubMed records contain links to full-text articles, and a collection of full-text books. PubMed provides access to the MEDLINE database and Index Medicus.<br />Dates of coverage: 1966-current</p>
+			<p><a href="http://www.pubmedcentral.nih.gov/"><strong>PubMed Central<br /></strong></a>Access: National Institutes of Health<br />Resource Type: Journal article archive and database with links to full-text<br />Subjects covered: Biomedical and life sciences<br />Content: PubMed Central is a digital archive of life sciences journal literature, developed and managed by the National Center for Biotechnology Information (NCBI) at the U.S. National Library of Medicine (NLM).<br />Dates of coverage: mid-1800s-current</p>
+		</div>
+		<section id="Q">
+			<h1>Q</h1>
+			<div class="backtotop"> <a href="#TopNav">^</a></div>
+		</section>
+		<section id="R">
+			<h1>R</h1>
+			<div class="backtotop"> <a href="#TopNav">^</a></div>
+		</section>
+		
+		<section id="S">
+			<h1>S</h1>
+			<div class="backtotop"> <a href="#TopNav">^</a></div>
+		</section>
+		<div>
+			<p><a href="http://proxy.jewell.edu:2048/login?url=http://isiknowledge.com/?DestApp=WOS&amp;editions=SCI"><strong>Science Citation Index Expanded<br /></strong></a>Access: Thomson Reuters<br />Resource Type: Bibliographic database with citations and full-text links<br />Subjects covered: Agricultural, biological, and environmental sciences, engineering, technology, applied science, medical and life sciences, and physical and chemical sciences<br />Content: Science Citation Index Expanded provides essential data from over 6,650 scientific and technical journals across 150 disciplines.<br /> Dates of coverage: 1900-current</p>
+			<p><a href="http://science.gov/"><strong>Science.gov<br /></strong></a>Access: CENDI<br />Resource Type: Reference website<br />Subjects covered: General sciences<br />Content: Science.gov is a gateway to government science information and research results. Currently in its fifth generation, Science.gov provides a search of over 38 scientific databases and 200 million pages of science information with just one query, and is a gateway to 1,950+ scientific websites.<br />Dates of coverage: Varies</p>
+			<p><a href="http://proxy.jewell.edu:2048/login?url=http://scifinder.cas.org"><strong>SciFinder<br /></strong></a>Access: American Chemical Society<br />Resource type: Citation and diagram database<br />Subjects covered: biomedical sciences, chemistry, engineering, materials science, agricultural science, and general science<br />Content: curated collection of information on disclosed chemistry and related research produced by CAS Substances, Markush and reaction information, patents, documents, experimental and predicted properties, and spectra.Search by research topic, chemical structure, chemical name or structure, SMILES or InChI string, author or company name and many other options.<br />Dates of coverage: 1907-current<br />(You need to register as a user before use <a target="_blank" href="http://proxy.jewell.edu:2048/login?url=https://scifinder.cas.org/registration/index.html?corpKey=45039EE2X86F350ABX190F19EA4CD87790A9"><strong>SciFinder registration</strong></a>)</p>
+			<p><a href="http://www.census.gov/compendia/statab/"><strong>Statistical Abstract of the United States<br /></strong></a>Access: U. S. Census<br />Resource Type: Statistical database<br />Subjects covered: Social studies, political science, economics<br />Content: The <em>Statistical Abstract of the United States</em> is the authoritative and comprehensive summary of statistics on the social, political, and economic organization of the United States.<br />Dates of coverage: 1878-2012</p>
+		</div>
+		<section id="T">
+			<h1>T</h1>
+			<div class="backtotop"> <a href="#TopNav">^</a></div>
+		</section>
+		<div>
+			<p><a href="http://thomas.loc.gov/"><strong>THOMAS<br /></strong></a>Access: Library of Congress<br />Resource Type: Research database<br />Subjects covered: Government, legislation, political science<br />Content: THOMAS is provided by the United States Library of Congress in order to make federal legislative information freely available to the public. It is updated several times each day, and continues to grow in coverage. It allows access to information on bills and resolutions, congressional records, presidential nominations, treaties, committee reports, and other government resources.<br />Dates of coverage: 1967-current</p>
+			<p><a href="http://proxy.jewell.edu:2048/login?url=http://www.csa.com/htbin/dbrng.cgi?username=lau29&amp;access=lau2929&amp;db=toxline-set-c&amp;adv=1"><strong>TOXLINE<br /></strong></a>Access: ProQuest<br />Resource Type: Research database<br />Subjects covered: Toxicology, chemicals and pharmaceuticals, pesticides, environmental pollutants, and mutagens and teratogens<br />Content: TOXLINE covers an extensive array of references to literature on biochemical, pharmacological, physiological, and toxicological effects of drugs and other chemicals. TOXLINE&reg; is an important resource for those studying environmental sciences, occupational health, and medicine. This database, produced by the U.S. National Library of Medicine, provides bibliographic citations and abstracts from the core journal literature in toxicology. It is updated weekly.<br />Dates of coverage: 2006-current</p>
+		</div>
+		<section id="U">
+			<h1>U</h1>
+			<div class="backtotop"> <a href="#TopNav">^</a></div>
+		</section>		
+		<div>
+			<p><a href="http://www.gpoaccess.gov/uscode/index.html"><strong>U.S. Code (2011 edition)<br /></strong></a>Access: U. S. Government Printing Office<br />Resource Type: Government information website<br />Subjects covered: Legislation<br />Content: The United States Code is the codification by subject matter of the general and permanent laws of the United States. It is divided by broad subjects into 50 titles and published by the Office of the Law Revision Counsel of the U.S. House of Representatives. Since 1926, the United States Code has been published every six years. In between editions, annual cumulative supplements are published in order to present the most current information.<br />Dates of coverage: 1994-2011</p>
+			<p><a href="http://www.gpoaccess.gov/gmanual/index.html"><strong>U.S Government Manual<br /></strong></a>Access: U. S. Government Printing Office<br />Resource Type: Government information website<br />Subjects covered: Government, international relations<br />Content: As the official handbook of the Federal Government, the United States Government Manual provides comprehensive information on the agencies of the legislative, judicial, and executive branches. It also includes information on quasi-official agencies, international organizations in which the United States participates, and boards, commissions, and committees. The Manual begins with reprints of the Declaration of Independence and the U.S. Constitution. The new edition of the Manual is available annually in late summer.<br />Dates of coverage: 1995-2009</p>
+			<p><a href="http://www.irs.ustreas.gov/"><strong>U.S Internal Revenue Service<br /></strong></a>Access: Internal Revenue Service<br />Resource Type: Government organization website<br />Subjects covered: Economics, government<br />Content: The IRS mission is to provide America's taxpayers top quality service by helping them understand and meet their tax responsibilities and enforce the&nbsp;law with integrity and fairness to all.<br />Dates of coverage: Current</p>
+		</div>
+		<section id="V">
+			<h1>V</h1>
+			<div class="backtotop"> <a href="#TopNav">^</a></div>
+		</section>
+		<section id="W">
+			<h1>W</h1>
+			<div class="backtotop"> <a href="#TopNav">^</a></div>
+		</section>
+		<div>
+			<p><a href="http://proxy.jewell.edu:2048/login?url=http://isiknowledge.com/?DestApp=WOS&amp;editions=SCI"><strong>Web of Science<br /></strong></a>Access: Thomson Reuters<br />Resource Type: Citation Index<br />Subjects covered: sciences, social sciences, arts, and humanities<br />Content: Offers a searchable citation and reference index as well as citation mapping, citation management tools, counts, and analysis tools. Includes over 8,300 major journals across 150 disciplines.<br />Dates of coverage: 1900-current</p>
+			<p><a href="http://proxy.jewell.edu:2048/login?url=http://newfirstsearch.oclc.org/dbname=WorldCat;screen=advanced;FSIP"><strong>WorldCat<br /></strong></a>Access: FirstSearch<br />Resource Type: Library catalogue database<br />Subjects covered: Multidisciplinary<br />Content: WorldCat is the world's largest network of library content and services. WorldCat libraries are dedicated to providing access to their resources on the Web, where most people start their search for information. WorldCat.org lets you find an item of interest and then locate a library near you that owns it. Usually you will link directly to the item record on the library's Web site. The actions available to you on that page will vary from one library to another. You may be able to join a waiting list, reserve the item, check it out or even have it shipped or delivered.</p>
+			<p><a href="http://proxy.jewell.edu:2048/login?url=http://newfirstsearch.oclc.org/dbname=WorldCatDissertations;screen=advanced;FSIP"><strong>WorldCat Dissertations<br /></strong></a>Access: FirstSearch<br />Resource Type: Catalogue of dissertations<br />Subjects covered: Multidisciplinary<br />Content: This database provides fast and convenient access to the dissertations and theses available in OCLC member libraries. Many of these are available electronically, at no charge, directly from the publishing institution. WorldCat Dissertations is updated daily</p></td>
+		</div>
+		<section id="X">
+			<h1>X</h1>
+			<div class="backtotop"> <a href="#TopNav">^</a></div>
+		</section>
+		<section id="Y">
+			<h1>Y</h1>
+			<div class="backtotop"> <a href="#TopNav">^</a></div>
+		</section>
+		<section id="Z">
+			<h1>Z</h1>
+			<div class="backtotop"> <a href="#TopNav">^</a></div>
+		</section>
+	
+	</div>
+<a href="#" class="back-to-top">Back to Top</a>
+</body>

@@ -1,0 +1,520 @@
+<head>
+	<style>
+			.alpha {width:80%}
+			.alpha a{text-decoration:none; color:#045FB4; font-size:18px; font-weight:bold;}
+			.alpha p{padding-left:10px;}
+			
+			.alpha section { width:100%; height:30px; overflow:hidden; margin:5px 0px; padding-bottom:0px; padding-left:10px; background: #d1d1d1; border-radius:2px;}
+			.alpha section h1{color:white; font-size:15pt; text-decoration:none; margin-top:5px;}
+			.alpha section a{color:white; text-decoration:none; font-size:18px;}
+			.alpha section a:hover {text-decoration:none; color:#7C0000; font-size:18px;}
+			
+			
+			.resource {padding-left:10px; margin-bottom:10px;}
+			.info {padding-left:10px;}
+			
+			/*Information lines for resource */
+			.access:before {content:"Access: "; color:black; font-size:9pt; font-weight:bold;}
+			.type:before {content:"Resource Type: "; color:black;font-size:9pt; font-weight:bold;}
+			
+			.subject:before {content:"Subjects: "; color:black; font-size:9pt;font-weight:bold;}
+			.subjectbutton {color:white; background: #d1d1d1; display:inline-block; padding:2px 3px; border-radius: 2px; margin-right:5px; margin-top:2px; margin-bottom:2px;}
+
+			
+			.contents:before {content:"Contents: "; color:black;font-size:9pt; font-weight:bold;}
+			.coverage:before {content:"Coverage: "; color:black;font-size:9pt; font-weight:bold;}
+
+
+			.letternav a {color:white; text-decoration:none;}
+			.letternav section{width:auto; height:30px; margin:5px 1px; border-radius:5px; padding-left: 5px; padding-right:5px; background:#7C0000 ; position:relative; float:left;}
+			.letternav section h1{color:white; font-size: 18px; position:relative; top:-9px; text-decoration:none;}
+			.letternav section h3{color:white; font-size: 9pt; position:relative; top:-5px; text-decoration:none;}
+			.letternav section:hover {background: #d1d1d1}
+
+			
+			
+			.back-to-top {
+				position: fixed;
+				bottom: 2em;
+				right: 0px;
+				text-decoration: none;
+				color: white;
+				background-color: rgba(135, 135, 135, 0.50);;
+				font-size: 14px;
+				font-weight:bold;
+				padding: 1em;
+				display: none;
+				border-radius:15px;
+			}
+
+			.back-to-top:hover {    
+				background-color: #7C0000
+				}</style>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script></head>
+<body>
+<script>
+	jQuery(document).ready(function() {
+    var offset = 220;
+    var duration = 500;
+    jQuery(window).scroll(function() {
+        if (jQuery(this).scrollTop() > offset) {
+            jQuery('.back-to-top').fadeIn(duration);
+        } else {
+            jQuery('.back-to-top').fadeOut(duration);
+        }
+    });
+    
+    jQuery('.back-to-top').click(function(event) {
+        event.preventDefault();
+        jQuery('html, body').animate({scrollTop: 0}, duration);
+        return false;
+    })
+	});
+</script>
+	<div id="TopNav">
+		<div class="letternav"><br />
+			<section>
+				<h1><a href="#A">A</a></h1>
+			</section>
+			<section>
+				<h1><a href="#B">B</a></h1>
+			</section>
+			<section>
+				<h1><a href="#C">C</a></h1>
+			</section>
+			<section>
+				<h1><a href="#D">D</a></h1>
+			</section>
+			<section>
+				<h1><a href="#E">E</a></h1>
+			</section>
+			<section>
+				<h1><a href="#F">F</a></h1>
+			</section>
+			<section>
+				<h1><a href="#G">G</a></h1>
+			</section>
+			<section>
+				<h1><a href="#H">H</a></h1>
+			</section>
+			<section>
+				<h1><a href="#I">I</a></h1>
+			</section>
+			<section>
+				<h1><a href="#J">J</a></h1>
+			</section>
+			<section>
+				<h1><a href="#K">K</a></h1>
+			</section>
+			<section>
+				<h1><a href="#L">L</a></h1>
+			</section>
+			<section>
+				<h1><a href="#M">M</a></h1>
+			</section>
+			<section>
+				<h1><a href="#N">N</a></h1>
+			</section>
+			<section>
+				<h1><a href="#O">O</a></h1>
+			</section>
+			<section>
+				<h1><a href="#P">P</a></h1>
+			</section>
+			<section>
+				<h1><a href="#Q">Q</a></h1>
+			</section>
+			<section>
+				<h1><a href="#R">R</a></h1>
+			</section>
+			<section>
+				<h1><a href="#S">S</a></h1>
+			</section>
+			<section>
+				<h1><a href="#T">T</a></h1>
+			</section>
+			<section>
+				<h1><a href="#U">U</a></h1>
+			</section>
+			<section>
+				<h1><a href="#V">V</a></h1>
+			</section>
+			<section>
+				<h1><a href="#W">W</a></h1>
+			</section>
+			<section>
+				<h1><a href="#X">X</a></h1>
+			</section>
+			<section>
+				<h1><a href="#Y">Y</a></h1>
+			</section>
+			<section>
+				<h1><a href="#Z">Z</a></h1>
+			</section>	
+			<section>
+				<h3><a href="alph.html">View Descriptions</a></h3>
+			</section>
+		</div></div>
+
+	<div class="alpha">
+
+		<section id="A">
+			<h1>A</h1>
+		</section>
+		<div>
+			<div class="resource">
+				<a href="http://www.sciencemag.org/magazine">AAAS Science Magazine</a><br>
+			</div>								
+			<div class="resource">
+				<a href="http://proxy.jewell.edu:2048/login?url=http://search.ebscohost.com/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=a9h" target="_blank" linktype="url" style="null">Academic Search Complete</a><a href="http://proxy.jewell.edu:2048/login?url=http://search.ebscohost.com/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=a9h"></a><br>
+			</div>	
+			<div class="resource">
+				<a href="http://proxy.jewell.edu:2048/login?url=http://pubs.acs.org/archives/promo/index.html" target="_blank" linktype="url" style="null">American Chemical Society Legacy Archives</a><a href="http://proxy.jewell.edu:2048/login?url=http://pubs.acs.org/archives/promo/index.html"></a>				
+				
+			</div>
+			<div class="resource">
+				<a href="http://proxy.jewell.edu:2048/login?url=http://pubs.acs.org/about.html" target="_blank" linktype="url" style="null">American Chemical Society Web Editions</a><a href="http://proxy.jewell.edu:2048/login?url=http://pubs.acs.org/about.html"></a>
+				
+			</div>
+		
+			<div class="resource">
+				<a href="http://factfinder2.census.gov/faces/nav/jsf/pages/index.xhtml" target="_blank" linktype="url">American FactFinder</a>
+				
+			</div>
+			<div class="resource">
+				<a href="http://memory.loc.gov/ammem/browse/" target="_blank" linktype="url" style="null">American Memory</a><a href="http://memory.loc.gov/ammem/browse/"></a>
+				
+			</div>
+			<div class="resource">
+				<a href="http://proxy.jewell.edu:2048/login?url=http://search.ebscohost.com/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=pdh" target="_blank" linktype="url" style="null">APA PsycArticles</a><a href="http://proxy.jewell.edu:2048/login?url=http://search.ebscohost.com/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=pdh"></a>				
+				
+			</div>
+			<div class="resource">
+				<a href="http://proxy.jewell.edu:2048/login?url=http://search.ebscohost.com/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=aai" target="_blank" linktype="url">Art Index</a>				
+				
+			</div>
+			<div class="resource">
+				<a href="http://proxy.jewell.edu:2048/login?url=http://search.ebscohost.com/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=air" target="_blank" linktype="url" style="null">Art Index Retrospective</a>
+				
+			</div>
+			<div class="resource">
+				<a href="http://proxy.jewell.edu:2048/login?url=http://newfirstsearch.oclc.org/dbname=Article1st;screen=advanced;FSIP" target="_blank" linktype="url" style="null">ArticleFirst</a><a href="http://proxy.jewell.edu:2048/login?url=http://newfirstsearch.oclc.org/dbname=Article1st;screen=advanced;FSIP"></a>	
+				
+			</div>
+			<div class="resource">
+					<a linktype="url" target="_blank" href="http://proxy.jewell.edu:2048/login?url=http://search.ebscohost.com/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=rfh">ATLA Religion with ATLA Serials</a><a href="http://proxy.jewell.edu:2048/login?url=http://search.ebscohost.com/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=rfh"><br /></a>
+			</div>				</div>	
+		<section id="B">
+			<h1>B</h1>
+			<div class="backtotop"> <a href="#TopNav">^</a></div>
+		</section>
+			<div>
+				<div class="resource">
+					<a href="http://www.state.gov/r/pa/ei/bgn/" target="_blank" linktype="url">Background Notes</a>
+				</div>
+				<div class="resource">
+					<a href="http://bartleby.com/" target="_blank" linktype="url">Bartleby.com</a>
+				</div>
+				<div class="resource">
+					<a href="http://www.biography.com/" target="_blank" linktype="url">Biography.com</a><a href="http://www.biography.com/"></a>
+				</div>
+				<div class="resource">
+					<a href="http://proxy.jewell.edu:2048/login?url=http://www.csa.com/htbin/dbrng.cgi?username=lau29&amp;access=lau2929&amp;db=biolclust-set-c&amp;adv=1" target="_blank" linktype="url">Biological Sciences</a>	
+				</div></div>
+		<section id="C">
+			<h1>C</h1>
+			<div class="backtotop"> <a href="#TopNav">^</a></div>
+		</section>
+			<div>
+				<div class="resource">
+					<a name="C"></a><a href="http://www.cdc.gov/">Center for Disease Control website</a>
+				</div>
+				<div class="resource">
+					<a href="http://proxy.jewell.edu:2048/login?url=http://search.ebscohost.com/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=e5h">Central &amp; Eastern European Academic Source</a>
+				</div>
+				<div class="resource">
+					<a style="null" linktype="url" target="_blank" href="http://proxy.jewell.edu:2048/login?url=http://www.chicagomanualofstyle.org/home.html">Chicago Manual of Style</a>
+				</div>
+				<div class="resource">
+					<a href="http://proxy.jewell.edu:2048/login?url=http://www.cro2.org">Choice Reviews Online</a>
+				</div>
+				<div class="resource">
+					<a href="http://proxy.jewell.edu:2048/login?url=http://chronicle.com">Chronicle of Higher Education</a>
+				</div>
+				<div class="resource">
+					<a href="http://proxy.jewell.edu:2048/login?url=http://search.ebscohost.com/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=c8h">CINAHL Full-text</a>
+				</div>
+				<div class="resource">
+					<a href="http://proxy.jewell.edu:2048/login?url=http://search.ebscohost.com/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=cgh">Cochrane Controlled Trials Register</a>
+				</div>
+				<div class="resource">
+					<a linktype="url" target="_blank" href="http://www.ecfr.gov/cgi-bin/text-idx?sid=099beb37659e3d5d37d68c6358a9287f&amp;c=ecfr&amp;tpl=/ecfrbrowse/Title46/46tab_02.tpl">Code of Federal Regulations</a>
+				</div>
+				<div class="resource">
+					<a href="http://proxy.jewell.edu:2048/login?url=http://search.ebscohost.com/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=ufh">Communications and Mass Media Complete</a>
+				</div>
+				<div class="resource">
+					<a href="http://www.gpo.gov/fdsys/browse/collection.action?collectionCode=CPD">Compilation of Presidential Documents</a>
+				</div>
+				<div class="resource">
+					<a href="http://proxy.jewell.edu:2048/login?url=http://www.csa.com/htbin/dbrng.cgi?username=lau29&amp;access=lau2929&amp;db=cpi-set-c&amp;adv=1">Conference Paper Index</a>
+				</div>
+				<div class="resource">
+					<a linktype="url" target="_blank" href="http://www.gpo.gov/fdsys/browse/collection.action?collectionCode=CREC">Congressional Record
+					</a>
+				</div></div>
+		<section id="D">
+			<h1>D</h1>'
+			<div class="backtotop"> <a href="#TopNav">^</a></div>
+		</section>
+		<div>
+			<div class="resource">
+				<a href="http://proxy.jewell.edu:2048/login?url=http://search.ebscohost.com/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=dah">Database of Abstracts of Reviews of Effectiveness</a>
+			</div>
+			<div class="resource">
+				<a href="http://www.osti.gov/bridge/">DOE Energy Citations</a>
+			</div></div>
+		<section id="E">
+			<h1>E</h1>
+			<div class="backtotop"></div>
+		</section>
+		<div>
+			<div class="resource">
+				<a href="http://proxy.jewell.edu:2048/login?url=http://search.ebscohost.com/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=ehh">Education Research Complete</a>
+			</div>
+			<div class="resource">
+				<a href="http://proxy.jewell.edu:2048/login?url=http://www.britannica.com/">Encyclopedia Britannica</a>
+			</div>
+			<div class="resource">
+				<a href="http://proxy.jewell.edu:2048/login?url=http://newfirstsearch.oclc.org/dbname=ERIC;screen=advanced;FSIP">ERIC</a>
+			</div></div>
+		<section id="F">
+			<h1>F</h1>
+			<div class="backtotop"> <a href="#TopNav">^</a></div>
+		</section>
+		<div>
+			<div class="resource">
+				<a href="http://www.gpoaccess.gov/fr/index.html">Federal Register</a>
+			</div>
+			<div class="resource">
+				<a href="http://proxy.jewell.edu:2048/login?url=http://digital.films.com/portalplaylists.aspx?cid=1637&amp;aid=7290"><strong>Films on Demand</a>
+			</div>
+			<div class="resource">
+				<a href="http://proxy.jewell.edu:2048/login?url=http://newfirstsearch.oclc.org/FSIP">FirstSearch</a>
+			</div></div>
+		<section id="G">
+			<h1>G</h1>
+			<div class="backtotop"> <a href="#TopNav">^</a></div>
+		</section>
+		<div>
+			<div class="resource">
+				<a href="http://proxy.jewell.edu:2048/login?url=http://find.galegroup.com/gvrl/start.do?prodId=GVRL&amp;userGroupName=jewell_main"><strong>Gale Virtual Reference Library</a>
+			</div>
+			<div class="resource">
+				<a href="http://www.gpoaccess.gov/">GPO Access</a>
+			</div>
+			<div class="resource">
+				<a href="http://proxy.jewell.edu:2048/login?url=http://search.ebscohost.com/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=8gh">GreenFILE</a>
+			</div></div>
+		<section id="H">
+			<h1>H</h1>
+			<div class="backtotop"></div>
+		</section>
+		<div>
+			<div class="resource">
+				<a style="null" linktype="url" target="_blank" href="http://proxy.jewell.edu:2048/login?url=http://www.heritagequestonline.com">Heritage Quest Online</a>
+			</div>
+			<div class="resource">
+				<a href="http://proxy.jewell.edu:2048/login?url=http://search.ebscohost.com/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=hia">Historical Abstracts</a>
+			</div></div>
+	
+		<section id="I">
+			<h1>I</h1>
+			<div class="backtotop"> <a href="#TopNav">^</a></div>
+		</section>
+		<div>
+			<div class="resource">
+				<a href="http://proxy.jewell.edu:2048/login?url=http://www.iop.org/Journals/bytitle" linktype="url">Institute of Physics&nbsp;Science</a>
+			</div>
+			<div class="resource">
+				<a href="http://proxy.jewell.edu:2048/login?url=http://search.proquest.com/iimpft?accountid=15047" linktype="url">International Index to Music Periodicals (IIMP)</a>
+			</div></div>
+		<section id="J">
+			<h1>J</h1>
+			<div class="backtotop"> <a href="#TopNav">^</a></div>
+		</section>
+		<div>
+			<div class="resource">
+				<a href="http://proxy.jewell.edu:2048/login?url=http://www.jstor.org/search">JSTOR</a>
+			</div>
+		</div>
+		<section id="K">
+			<h1>K</h1>		
+		</section>
+		<section id="L">
+			<h1>L</h1>			
+		</section>
+		<div>
+			<div class="resource">
+				<a linktype="url" target="_blank" href="http://proxy.jewell.edu:2048/login?url=http://www.lexisnexis.com/hottopics/lnacademic">LexisNexis: Academic</a>
+			</div>
+			<div class="resource">
+				<a href="http://proxy.jewell.edu:2048/login?url=http://search.ebscohost.com/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=lxh">Library, Information Science, and Technology Abstracts</a>
+			</div>
+			<div class="resource">
+				<a href="http://proxy.jewell.edu:2048/login?url=http://www.librarymusicsource.com">Library Music Source</a>
+			</div>
+			<div class="resource">
+				<a href="http://locatorplus.gov/cgi-bin/Pwebrecon.cgi?DB=local&amp;PAGE=First">LocatorPlus-National Library of Medicine</a>
+			</div></div>
+		<section id="M">
+			<h1>M</h1>
+		</section>
+		<div>
+			<div class="resource">
+				<a href="http://proxy.jewell.edu:2048/login?url=http://newfirstsearch.oclc.org/dbname=MEDLINE;screen=advanced;FSIP">MEDLINE (FirstSearch)</a>
+			</div>
+			<div class="resource">
+				<a href="http://www.nlm.nih.gov/medlineplus/">MedlinePlus Health Information</a>
+			</div>
+			<div class="resource">
+				<a href="http://proxy.jewell.edu:2048/login?url=http://www.micromedexsolutions.com/micromedex2/librarian" linktype="url">Micromedex Healthcare</a>
+			</div>
+			<div class="resource">
+				<a href="http://proxy.jewell.edu:2048/login?url=http://search.ebscohost.com/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=fxh">Middle Eastern and Central Asian Studies</a>
+			</div>
+			<div class="resource">
+				<a linktype="url" target="_blank" href="http://www.sos.mo.gov/mdh/">Missouri Digital Heritage</a>
+			</div>
+			<div class="resource">
+				<a href="http://proxy.jewell.edu:2048/login?url=http://search.ebscohost.com/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=mzh">MLA Bibliography</a>
+			</div></div>
+		<section id="N">
+			<h1>N</h1>
+		</section>
+		<div>
+			<div class="resource">
+				<a href="http://proxy.jewell.edu:2048/login?url=http://williamjewell.naxosmusiclibrary.com/">Naxos Music Library</a>
+			</div>
+			<div class="resource">
+				<a href="http://proxy.jewell.edu:2048/login?url=http://access.NewspaperArchive.com" linktype="url">Newspaper Archive</a>
+			</div>
+			<div class="resource">
+				<a href="http://www.ntis.gov/">National Technical Information Service (NTIS)</a>
+			</div></div>
+		<section id="O">
+			<h1>O</h1>
+		</section>
+		<div>
+			<div class="resource">
+				<a href="http://proxy.jewell.edu:2048/login?url=http://www.oed.com">Oxford English Dictionary</a>
+			</div>
+			<div class="resource">
+				<a linktype="url" target="_blank" href="http://proxy.jewell.edu:2048/login?url=http://www.oxfordislamicstudies.com/">Oxford Islamic Studies Online</a>
+			</div></div>
+		<section id="P">
+			<h1>P</h1>
+			<div class="backtotop"> <a href="#TopNav">^</a></div>
+		</section>
+		<div>
+			<div class="resource">
+				<a href="http://proxy.jewell.edu:2048/login?url=http://newfirstsearch.oclc.org/dbname=PapersFirst;screen=advanced;FSIP">PapersFirst</a>
+			</div>
+			<div class="resource">
+				<a href="http://proxy.jewell.edu:2048/login?url=http://search.ebscohost.com/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=phl">Philosopher's Index</a>
+			</div>
+			<div class="resource">
+				<a href="http://proxy.jewell.edu:2048/login?url=http://vnweb.hwwilsonweb.com/hww/jumpstart.jhtml?prod=PLAY">Play Index</a>
+			</div>
+			<div class="resource">
+				<a href="http://proxy.jewell.edu:2048/login?url=http://search.ebscohost.com/login.aspx?authtype=ip,uid&amp;profile=pov">Points of View Reference Center</a>
+			</div>
+			<div class="resource">
+				<a href="http://proxy.jewell.edu:2048/login?url=http://newfirstsearch.oclc.org/dbname=Proceedings;screen=advanced;FSIP">ProceedingsFirst</a>
+			</div>
+			<div class="resource">
+				<a href="http://proxy.jewell.edu:2048/login?url=http://muse.jhu.edu/search">Project MUSE</a>
+			</div>
+			<div class="resource">
+				<a href="http://proxy.jewell.edu:2048/login?url=http://search.proquest.com/?accountid=15047">ProQuest Central</a>
+			</div>
+			<div class="resource">
+				<a href="http://www.ncbi.nlm.nih.gov/sites/entrez">PubMed</a>
+			</div>
+			<div class="resource">
+				<a href="http://www.pubmedcentral.nih.gov/">PubMed Central</a>
+			</div></div>
+		<section id="Q">
+			<h1>Q</h1>
+			<div class="backtotop"> <a href="#TopNav">^</a></div>
+		</section>
+		<section id="R">
+			<h1>R</h1>
+			<div class="backtotop"> <a href="#TopNav">^</a></div>
+		</section>
+		
+		<section id="S">
+			<h1>S</h1>
+			<div class="backtotop"> <a href="#TopNav">^</a></div>
+		</section>
+		<div>
+			<div class="resource">
+				<a href="http://proxy.jewell.edu:2048/login?url=http://isiknowledge.com/?DestApp=WOS&amp;editions=SCI">Science Citation Index Expanded</a>
+			</div>
+			<div class="resource">
+				<a href="http://science.gov/">Science.gov</a>
+			</div>
+			<div class="resource">
+				<a href="http://proxy.jewell.edu:2048/login?url=http://scifinder.cas.org">SciFinder</a>
+			</div>
+			<div class="resource">
+				<a href="http://www.census.gov/compendia/statab/">Statistical Abstract of the United States</a>
+			</div>
+		</div>
+		<section id="T">
+			<h1>T</h1>
+		</section>
+		<div>
+			<div class="resource">
+				<a href="http://thomas.loc.gov/">THOMAS</a>
+			</div>
+			<div class="resource">
+				<a href="http://proxy.jewell.edu:2048/login?url=http://www.csa.com/htbin/dbrng.cgi?username=lau29&amp;access=lau2929&amp;db=toxline-set-c&amp;adv=1">TOXLINE</a>
+			</div></div>
+		<section id="U">
+			<h1>U</h1>
+		</section>		
+		<div>
+			<div class="resource">
+				<a href="http://www.gpoaccess.gov/uscode/index.html">U.S. Code (2011 edition)</a>
+			</div>
+			<div class="resource">
+				<a href="http://www.gpoaccess.gov/gmanual/index.html">U.S Government Manual</a>
+			</div>
+			<div class="resource">
+				<a href="http://www.irs.ustreas.gov/">U.S Internal Revenue Service</a>
+			</div></div>
+		<section id="V">
+			<h1>V</h1>
+		</section>
+		<section id="W">
+			<h1>W</h1>
+		</section>
+		<div>
+			<div class="resource">
+				<a href="http://proxy.jewell.edu:2048/login?url=http://isiknowledge.com/?DestApp=WOS&amp;editions=SCI">Web of Science</a>
+			</div>
+			<div class="resource">
+				<a href="http://proxy.jewell.edu:2048/login?url=http://newfirstsearch.oclc.org/dbname=WorldCat;screen=advanced;FSIP">WorldCat</a>
+			</div></div>
+		<section id="X">
+			<h1>X</h1>
+		</section>
+		<section id="Y">
+			<h1>Y</h1>
+		</section>
+		<section id="Z">
+			<h1>Z</h1>
+		</section></div>
+<a href="#" class="back-to-top">Back to Top</a>
+</body>
