@@ -1,4 +1,4 @@
-RessearchDatabaseNavigation
+Research Database Navigation
 ===========================
 
 Research database navigation redesign project. Improving navigation, layout, structure of data. Working within ContentM cms. 
